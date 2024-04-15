@@ -2,26 +2,29 @@
 {% load static %}
 
 {% block content %}
-<div class="hero-section">
-    <div id="main_hero_banner" class="px-4 py-5 my-5 text-center">
-        <h1 class="display-5 fw-bold">Centered hero</h1>
-        <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s
-                most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system,
-                extensive prebuilt components, and powerful JavaScript plugins.</p>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+
+<section class="background-section">
+    <div class="overlay">
+        <div class="container">    
+            <div class="col-lg-6 mx-auto px-4 py-5 my-5 text-center">
+                <h1 class="display-5 fw-bold text-white">Centered hero</h1>
+                <p class="lead mb-4 text-white">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s
+                    most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system,
+                    extensive prebuilt components, and powerful JavaScript plugins.</p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <button type="button" class="btn btn-warning btn-lg px-4 gap-3">Primary button</button>
+                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</section>
 
 <section class="container py-5">
-    <h2 class="text-center mb-4">Services We Offers</h2>
+    <h2 class="text-center mb-4 text-white">Services We Offers</h2>
     <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
-            <div class="card bg-dark rounded text-white">
+            <div class="card bg-dark custom-card text-white">
                 <i class="fa-solid fa-computer services-icon" style="color: #ffffff;"></i>
                 <div class="card-body">
                     <h3 class="card-title text-warning">SEO</h3>
@@ -38,7 +41,7 @@
             </div>
         </div>
         <div class="col">
-            <div class="card bg-dark rounded text-white">
+            <div class="card bg-dark custom-card text-white">
                 <i class="fa-solid fa-mobile-screen-button services-icon" style="color: #ffffff;"></i>
                 <div class="card-body">
                     <h3 class="card-title text-warning">Social Media Marketing</h3>
@@ -55,7 +58,7 @@
             </div>
         </div>
         <div class="col">
-            <div class="card bg-dark rounded text-white">
+            <div class="card bg-dark custom-card text-white">
                 <i class="fa-solid fa-arrow-pointer services-icon" style="color: #ffffff;"></i>
                 <div class="card-body">
                     <h3 class="card-title text-warning">PPC Advertising</h3>
@@ -75,7 +78,7 @@
 </section>
 
 <section class="container py-5">
-    <h2 class="text-center mb-4">Our Partners</h2>
+    <h2 class="text-center mb-4 text-white">Our Partners</h2>
     <div id="partnerCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -115,6 +118,7 @@
         </div>
     </div>
 </section>
+
 {% endblock %}
 
 {% block postloadjs %}

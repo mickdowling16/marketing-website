@@ -4,6 +4,43 @@ html {
 
 .services-icon {
     font-size: 100px;
-    padding: 10px;
+    padding: 20px;
     text-align: left;
+}
+
+body {
+    background-color: rgb(24, 24, 24);
+}
+
+.social-icons-header {
+    padding: 5px;
+    font-size: large;
+}
+
+.custom-card {
+    border: 3px solid white;
+    border-radius: 40px; 
+}
+
+.background-section {
+    position: relative;
+    background-image: url('https://64.media.tumblr.com/5c447af25c5e5efcfa0a7d79ac92b25a/tumblr_px9hcgQSOo1qeyvpto1_500.gif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 600px; /* Adjust height as needed */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Black color with 0.4 opacity */
+}
+
+.container {
+    position: relative;
+    z-index: 1;
 }
