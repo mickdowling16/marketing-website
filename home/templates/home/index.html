@@ -22,7 +22,7 @@
     <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
             <div class="card bg-dark rounded text-white">
-                <img src="{% static 'images/seo_icon_white.png' %}" class="card-img-top" alt="Image 1">
+                <i class="fa-solid fa-computer services-icon" style="color: #ffffff;"></i>
                 <div class="card-body">
                     <h3 class="card-title text-warning">SEO</h3>
                     <p>Boost your online visibility with our customised SEO strategies.</p>
@@ -38,30 +38,34 @@
             </div>
         </div>
         <div class="col">
-            <div class="card bg-primary text-white">
-                <img src="image2.jpg" class="card-img-top" alt="Image 2">
+            <div class="card bg-dark rounded text-white">
+                <i class="fa-solid fa-mobile-screen-button services-icon" style="color: #ffffff;"></i>
                 <div class="card-body">
-                    <h3 class="card-title">Card 2</h3>
+                    <h3 class="card-title text-warning">Social Media Marketing</h3>
+                    <p>Boost your online presence with managed social media services</p>
+                    <h4 class="text-warning">Popular Features:</h4>
                     <p class="card-text">
                         <ul>
-                            <li>Bullet point 1</li>
-                            <li>Bullet point 2</li>
-                            <li>Bullet point 3</li>
+                            <li>Social media advertising</li>
+                            <li>Targetted Campaigns</li>
+                            <li>Always on mobile ads</li>
                         </ul>
                     </p>
                 </div>
             </div>
         </div>
         <div class="col">
-            <div class="card bg-primary text-white">
-                <img src="image3.jpg" class="card-img-top" alt="Image 3">
+            <div class="card bg-dark rounded text-white">
+                <i class="fa-solid fa-arrow-pointer services-icon" style="color: #ffffff;"></i>
                 <div class="card-body">
-                    <h3 class="card-title">Card 3</h3>
+                    <h3 class="card-title text-warning">PPC Advertising</h3>
+                    <p>Taget your audience online with PPC Advertising and Google Adwords</p>
+                    <h4 class="text-warning">Popular Features:</h4>
                     <p class="card-text">
                         <ul>
-                            <li>Bullet point 1</li>
-                            <li>Bullet point 2</li>
-                            <li>Bullet point 3</li>
+                            <li>Google Adwords</li>
+                            <li>Google Shopping Feed</li>
+                            <li>YouTube Ads</li>
                         </ul>
                     </p>
                 </div>
@@ -69,4 +73,57 @@
         </div>
     </div>
 </section>
+
+<section class="container py-5">
+    <h2 class="text-center mb-4">Our Partners</h2>
+    <div id="partnerCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="assets/images/blender_logo_no_socket_white.png" class="img-fluid mx-auto d-block" alt="Company Logo 1">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/images/Coca-Cola_logo_white.png" class="img-fluid mx-auto d-block" alt="Company Logo 2">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/images/google-white-logo-1.png" class="img-fluid mx-auto d-block" alt="Company Logo 3">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/images/microsoft-logo-black-and-white.png" class="img-fluid mx-auto d-block" alt="Company Logo 4">
+                    </div>
+                </div>
+            </div>
+            <!-- Add more carousel items with similar structure for additional slides -->
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="assets/images/microsoft-logo-black-and-white.png" class="img-fluid mx-auto d-block" alt="Company Logo 5">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/images/blender_logo_no_socket_white.png" class="img-fluid mx-auto d-block" alt="Company Logo 6">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/images/google-white-logo-1.png" class="img-fluid mx-auto d-block" alt="Company Logo 7">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/images/Coca-Cola_logo_white.png" class="img-fluid mx-auto d-block" alt="Company Logo 8">
+                    </div>
+                </div>
+            </div>
+            <!-- Add more carousel items with similar structure for additional slides -->
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block postloadjs %}
+
+<script>
+    // Auto play the carousel
+    $('#partnerCarousel').carousel({
+        interval: 1000 
+    });
+</script>
+
 {% endblock %}
