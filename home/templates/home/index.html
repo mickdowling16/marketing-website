@@ -20,121 +20,80 @@
     </div>
 </section>
 
-<section class="container py-5">
-    <h2 class="text-center mb-4 text-white">Services We Offers</h2>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-            <div class="card bg-dark custom-card text-white">
-                <i class="fa-solid fa-computer services-icon" style="color: #ffffff;"></i>
+<div class="container">
+    <h1 class="text-center py-4">Services We Offer</h1>
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
                 <div class="card-body">
-                    <h3 class="card-title text-warning">SEO</h3>
-                    <p>Boost your online visibility with our customised SEO strategies.</p>
-                    <h4 class="text-warning">Popular Features:</h4>
-                    <p class="card-text">
-                        <ul>
-                            <li>Keyword Optimization</li>
-                            <li>SEO Analytics and Reporting</li>
-                            <li>Site speed modifications</li>
-                        </ul>
-                    </p>
+                    <h5 class="card-title">Service 1</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum tortor vitae porttitor mattis. Nam vestibulum purus ut justo consequat, nec vestibulum elit vehicula.</p>
                 </div>
             </div>
         </div>
-        <div class="col">
-            <div class="card bg-dark custom-card text-white">
-                <i class="fa-solid fa-mobile-screen-button services-icon" style="color: #ffffff;"></i>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
                 <div class="card-body">
-                    <h3 class="card-title text-warning">Social Media Marketing</h3>
-                    <p>Boost your online presence with managed social media services</p>
-                    <h4 class="text-warning">Popular Features:</h4>
-                    <p class="card-text">
-                        <ul>
-                            <li>Social media advertising</li>
-                            <li>Targetted Campaigns</li>
-                            <li>Always on mobile ads</li>
-                        </ul>
-                    </p>
+                    <h5 class="card-title">Service 2</h5>
+                    <p class="card-text">Praesent quis risus eu turpis luctus rhoncus sit amet ut nisi. Fusce malesuada auctor odio, sit amet laoreet urna lobortis eget.</p>
                 </div>
             </div>
         </div>
-        <div class="col">
-            <div class="card bg-dark custom-card text-white">
-                <i class="fa-solid fa-arrow-pointer services-icon" style="color: #ffffff;"></i>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
                 <div class="card-body">
-                    <h3 class="card-title text-warning">PPC Advertising</h3>
-                    <p>Taget your audience online with PPC Advertising and Google Adwords</p>
-                    <h4 class="text-warning">Popular Features:</h4>
-                    <p class="card-text">
-                        <ul>
-                            <li>Google Adwords</li>
-                            <li>Google Shopping Feed</li>
-                            <li>YouTube Ads</li>
-                        </ul>
-                    </p>
+                    <h5 class="card-title">Service 3</h5>
+                    <p class="card-text">Vivamus vestibulum leo id nisi euismod commodo. Aenean ut urna at ipsum semper consectetur sed vel quam.</p>
                 </div>
             </div>
         </div>
     </div>
-</section>
-
-<section class="container py-5">
-    <h2 class="text-center mb-4 text-white">Our Partners</h2>
-    <div id="partnerCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="row">
-                    <div class="col-md-3">
-                        <img src="assets/images/blender_logo_no_socket_white.png" class="img-fluid mx-auto d-block" alt="Company Logo 1">
-                    </div>
-                    <div class="col-md-3">
-                        <img src="assets/images/Coca-Cola_logo_white.png" class="img-fluid mx-auto d-block" alt="Company Logo 2">
-                    </div>
-                    <div class="col-md-3">
-                        <img src="assets/images/google-white-logo-1.png" class="img-fluid mx-auto d-block" alt="Company Logo 3">
-                    </div>
-                    <div class="col-md-3">
-                        <img src="assets/images/microsoft-logo-black-and-white.png" class="img-fluid mx-auto d-block" alt="Company Logo 4">
-                    </div>
-                </div>
-            </div>
-            <!-- Add more carousel items with similar structure for additional slides -->
-            <div class="carousel-item">
-                <div class="row">
-                    <div class="col-md-3">
-                        <img src="assets/images/microsoft-logo-black-and-white.png" class="img-fluid mx-auto d-block" alt="Company Logo 5">
-                    </div>
-                    <div class="col-md-3">
-                        <img src="assets/images/blender_logo_no_socket_white.png" class="img-fluid mx-auto d-block" alt="Company Logo 6">
-                    </div>
-                    <div class="col-md-3">
-                        <img src="assets/images/google-white-logo-1.png" class="img-fluid mx-auto d-block" alt="Company Logo 7">
-                    </div>
-                    <div class="col-md-3">
-                        <img src="assets/images/Coca-Cola_logo_white.png" class="img-fluid mx-auto d-block" alt="Company Logo 8">
-                    </div>
-                </div>
-            </div>
-            <!-- Add more carousel items with similar structure for additional slides -->
-        </div>
-    </div>
-</section>
+</div>
 
 <div class="container">
-    <h1>Portfolio Gallery</h1>
+    <h1 class="text-center pb-3">Testimonials</h1>
+    <h3 class="text-center pb-3">See what our clients have to say</h3>
     <div class="row">
         {% for portfolio in portfolios %}
-        <div class="portfolio-item">
-            <div class="portfolio-image">
-                <img src="{{ portfolio.image.url }}" alt="{{ portfolio.name }}">
-            </div>
-            <div class="portfolio-content">
-                <h4 class="testimonial-heading">{{ portfolio.name }}</h4>
-                <p class="testimonial-font">{{ portfolio.testimonial }}</p>
+        <div class="col-md-6">
+            <div class="portfolio-item" onclick="toggleFlip(this);">
+                <div class="portfolio-image p-3">
+                    <img src="{{ portfolio.image.url }}" class="img-fluid" alt="{{ portfolio.name }}">
+                </div>
+                <div class="portfolio-content">
+                    <h4 class="testimonial-heading">{{ portfolio.name }}</h4>
+                    <p class="testimonial-font">{{ portfolio.testimonial }}</p>
+                </div>
             </div>
         </div>
         {% endfor %}
     </div>
 </div>
+<section class="container py-5">
+    <h2 class="text-center mb-4">Our Partners</h2>
+    <div id="partnerCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            {% for partner in partners %}
+                {% if forloop.first or forloop.counter0|divisibleby:4 %}  {# Start a new carousel item for the first partner or every 4th partner #}
+                    <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                        <div class="row">
+                {% endif %}
+                <div class="col-md-3 col-sm-6"> {# Display 4 images per row on larger and medium devices #}
+                    <div class="partner-item">
+                        <img src="{{ partner.image.url }}" class="img-fluid mx-auto d-block partner-image" alt="Company Logo">
+                    </div>
+                </div>
+                {% if forloop.counter|divisibleby:4 or forloop.last %}  {# Close the row for every 4th partner or the last partner #}
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+
+
 
 {% endblock %}
 
@@ -145,6 +104,10 @@
     $('#partnerCarousel').carousel({
         interval: 3000 
     });
+
+    function toggleFlip(element) {
+        element.classList.toggle('flipped');
+    }
 </script>
 
 {% endblock %}
