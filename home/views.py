@@ -1,8 +1,16 @@
 from django.shortcuts import render
-
-# Create your views here.
+from .models import PortfolioItem  # Import the PortfolioItem model
 
 def index(request):
-    """ A view to return the index page """
+    """ A view to return the index page with portfolio items """
 
-    return render(request, 'home/index.html')
+    # Retrieve all portfolio items from the database
+    portfolios = PortfolioItem.objects.all()
+
+    # Pass the portfolio items to the template
+    context = {
+        'portfolios': portfolios,
+    }
+
+    # Render the index template with the portfolio items
+    return render(request, 'home/index.html', context)
